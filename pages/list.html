@@ -1,0 +1,25 @@
+
+<h2>List of all bugs</h2>
+<a href="http://localhost/bugmanagement/#/addnewbug"><button class="btn btn-primary">Add New Bug</button></a>
+<table class="table table-bordered">
+	<thead>
+		<th>Id</th>
+		<th>Bugname</th>
+		<th>Found Date</th>
+		<th>Expected solve date</th>
+		<th>Language</th>
+		<th>Auth Person</th>
+		<th>Action</th>
+	</thead>
+	<tbody>
+		<tr ng-repeat="bg in bug">
+			<td>{{ bg.id }}</td>
+			<td> {{ bg.bugname }} </td>
+			<td> {{ bg.founddate }} </td>
+			<td> {{ bg.exp_sol_date }} </td>
+			<td> {{ bg.language }} </td>
+			<td> {{ bg.person }} </td>
+			<td> <a href="http://localhost/bugmanagement/#/edit/{{ bg.id }}"> Edit</a> | <a href="javascript://" data-ng-click="delete_user(bg.id)">Delete</a> </td>
+		</tr>
+	</tbody>
+</table>

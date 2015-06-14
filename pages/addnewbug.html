@@ -1,0 +1,36 @@
+<h3>
+	Add New Bug
+</h3>
+<style>
+	.container {
+		max-width: 300px;
+		margin:0 auto;
+	}
+</style>
+<div class="container">
+	<form method="post" name="addnewbugform" ng-submit="addnewbug()">
+		<div class="form-group">
+		<label for="bugname"> Bug Name:</label>
+			<input type="text"  id="bugname" class="form-control" name="bugname" ng-model="bugname">
+		</div>
+		<div class="form-group">
+		<label for="language">Language:</label>
+			<input type="text" id="language" class="form-control" name="language" placeholder="" ng-model="language">
+		</div>
+		<div class="form-group">
+		<label for="person">Person:</label>
+			<input type="text" id="person" class="form-control" name="person" placeholder="" ng-model="person">
+		</div>
+		<div class="form-group">
+		<label for="founddate">Found Date:</label>
+			<input type="text" id="founddate" class="form-control" name="founddate" placeholder="" ng-model="founddate">
+		</div>
+		<div class="form-group">
+		<label for="expsoldate">Expected Sol date:</label>
+			<input type="text" id="expsoldate" class="form-control" name="expsoldate" placeholder="" ng-model="exp_sol_date">
+		</div>
+		
+		
+		<input type="submit" class="btn btn-primary" value="Add Bug">
+	</form>
+</div>

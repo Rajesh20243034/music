@@ -1,0 +1,88 @@
+<div class="logom" id="logomusic">
+	<a ng-href="#/"><img ng-src="images/3.jpg"></a>
+</div>
+<div class="searchm" id="searchm">
+	<form class="form-inline" method="GET" ng-submit="search()">
+		<div class="form-group" id="searchgroup">
+			<div class="input-group">
+				<input type="text" class="form-control" id="searchmain" placeholder="Search Music..." ng-model="searchng">
+				<div class="input-group-addon">
+					SEARCH
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<div class="rightheader" id="rightheader">
+	<div class="input-group">
+		<div class="input-group-addon">
+			<i class="fa fa-shopping-cart"></i>
+		</div>
+		<input type="text" class="form-control" id="carttext" ng-model="carttxt">
+	</div>
+	<div class="languagediv" id="languagediv">
+		<select class="form-control">
+			<option>Hindi</option>
+			<option>Englist</option>
+			<option>French</option>
+		</select>
+	</div>
+	<div class="accountdiv" id="accountdiv">
+		<div class="input-group">
+		<div class="dropdowndiv">
+			Account<b class="caret dropdown-toggle" data-toggle="dropdown" aria-expanded="false"">
+				
+			</b>
+			<ul class="dropdown-menu" role="menu">
+			    <li ng-show="!signin"><a href="#/signin">Sign In</a></li>
+			    <li ng-show="signin"><a href="#/">Welcome {{ name }}</a></li>
+			    <li><a href="#/signup">Sign Up</a></li>
+			    <li><a href="#/subscribe">Subscribe</a></li>
+			    
+			 </ul>
+		</div>
+		<div class="imgrightdiv">
+			<img ng-src="images/3.jpg"/>
+		</div>
+			
+		</div>
+	</div>
+</div>
+<div class="menubar" id="menubar">
+		<div class="menubarhome" id="menubarhome">
+			<a href="#/" id="home"> 
+			Home
+			</a>
+		</div>
+		<div class="menubarspecial" id="menubarspecial">
+			<a href="#/special" id="special">
+			Special
+			</a>
+		</div>
+		<div class="menubarartist" id="menubarartist">
+			<a href="#/artist" id="artist">
+				Artist
+			</a>
+		</div>
+		<div class="menubarcontact" id="menubarcontact">
+			<a href="#/contact" id="contact">Contact</a>
+		</div>
+		<div class="menubarright pull-right" id="menubarright">
+			<span class="gtouch">Get in Touch</span>
+			<span class="facebookconnect">
+			<a href="#">
+			f
+			</a>
+			</span>
+			<span class="googleconnect">
+			<a href="#">
+			g
+			</a>
+			</span>
+			<span class="twitterconnect">
+			<a href="">
+			t
+			</a>
+			</span>
+		</div>
+	</div>

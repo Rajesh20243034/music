@@ -1,0 +1,25 @@
+<div class="rightdivpr" ng-controller="recentController">
+	<h3>Recent Albums</h3>
+	<div class="prinr">
+		<div class="productlistinr" ng-repeat="rsong in recentsongs">
+			<div class="imginr">
+				<img ng-src="images/songsimages/{{rsong.image}}">
+			</div>
+			<div class="contentrightinr">
+				<div class="title">
+					<h4>{{ rsong.title }}</h4>
+				</div>
+				<div class="country">
+					<p>USA</p>
+				</div>
+				<div class="genre">
+					<h4>Genre: </h4><p>{{ rsong.genre }}</p>
+				</div>
+				<div class="Actors">
+				<h4>Actors:</h4>
+					<p>{{ rsong.actors }}</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

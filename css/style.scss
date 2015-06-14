@@ -1,0 +1,133 @@
+$backgroundcolor:#345F5F;
+$maincontainercolor:white;
+
+body {
+	background-color:$backgroundcolor;
+}
+#css_maincontainer {
+	width:1200px;
+	margin:50px;
+	margin-bottom:0;
+	background-color:$maincontainercolor;
+	padding:0;
+}
+#mainheader {
+	float:left;
+	background-color:rgb(220,220,220);
+	width:100%;
+	padding:15px;	
+}
+#logomusic {
+	width:15%;
+	float:left;
+	a {
+	img {
+	width:50px;
+	height:50px;
+	border-radius:25px;
+	}
+	}
+}
+#searchm {
+	width:45%;
+	float:left;
+	margin:0 auto;
+	margin-right:20px;
+}
+#rightheader {
+	width:37%;
+	float:left;
+	div.input-group {
+		width:31%;
+		float:left;
+	}
+	div.languagediv {
+	float:left;
+	width:25%;
+	}
+	div.accountdiv {
+	padding-left:25px;
+	float:left;
+	width:40%;
+		div.input-group{
+		div.dropdowndiv {
+			  margin-top: 25px;
+  			  margin-right: 25px;
+		}
+			width:100%;
+			img {
+				width:50px;
+				height:50px;
+				border-radius:25px;
+				float:left;
+			}
+
+			div{
+				float:left;
+			}
+		}
+	}
+
+}
+#searchgroup {
+	
+	width:100%;
+	margin-right:10px;
+	div.input-group{
+		width:100%;
+		input {
+		width:100%;
+		}
+		div.input-group-addon {
+		width:10%;
+		}
+
+	}
+}
+
+#homecontainer {
+	float:left;
+	padding:0;
+	margin:0;
+	width:100%;
+}
+#slider {
+	width:100%;
+	float:left;
+}
+#menubar {
+	margin-top:8px;
+	background-color:#B2BDBD;
+	float:left;
+	width:100%;
+	div {
+	a {
+		font-weight:normal;
+		font-size:20px;
+		color:#777171;
+	}
+	float:left;
+	width:8%;
+	height:45px;
+	text-align:center;
+	border-right:2px solid gray;
+	padding-top:14px;
+	}
+	div:hover {
+	background-color:black;
+		a {
+		color:white;
+		}
+	}
+
+	#menubarright {
+	width:20%;
+	border:0;
+	}
+	#menubarright:hover {
+	background-color:#B2BDBD;
+	a{
+	color:#777171;
+	}
+	}
+}

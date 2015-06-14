@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAAA,OAAQ;EACP,KAAK,EAAC,IAAI;EACV,KAAK,EAAC,IAAI;EACV,UAAU,EAAC,MAAM;EACjB,YAAK;IACJ,KAAK,EAAC,GAAG;IACT,MAAM,EAAC,IAAI;IACX,WAAW,EAAC,GAAG",
+"sources": ["signupform.scss"],
+"names": [],
+"file": "signupform.css"
+}

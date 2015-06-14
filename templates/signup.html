@@ -1,0 +1,31 @@
+<link rel="stylesheet" type="text/css" href="css/signupform.css">
+<div class="signup" id="signup" ng-controller="signupCtrl">
+	<form id="signupform" name="signupform" method="post" ng-submit="signup()" novalidate>
+		<div class="form-group">
+			<input type="text" class="form-control" name="name" placeholder="Your Name..." id="name" ng-model="name" required>
+			<span ng-show="signupform.name.$invalid && !signupform.name.$pristine" class="help-block">Please Enter Your Name</span>
+		</div>
+		<div class="form-group">
+			<input type="email" class="form-control" name="email" placeholder="Your Email..." id="email" ng-model="email" required>
+			<span class="help-block" ng-show="signupform.email.$invalid && !signupform.email.$pristine">
+				Please Enter valid email address
+			</span>
+		</div>
+		<div class="form-group">
+			<input type="password" class="form-control" name="password" placeholder="Your Password..." id="password" ng-model="password" ng-minlength="3" ng-maxlength="15" required>
+			<span class="help-block" ng-show="signupform.password.$error.minlength"> 
+				Your password is too short
+			</span>
+			<span class="help-block" ng-show="signupform.password.$error.maxlength">
+				Can not exceed 15 character
+			</span>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="date" id="date" placeholder="dd/mm/yyy" ng-model="date" required>
+		</div>
+		<div class="form-group">
+			<input type="text" class="form-control" name="mobile" placeholder="Your Mobile no..." id="mobile" ng-model="mobile" required>
+		</div>
+		<input type="submit" value="Register" class="btn btn-info" ng-disabled="signupform.$invalid">
+	</form>
+</div>

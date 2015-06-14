@@ -1,0 +1,28 @@
+<div class="productcenter" id="productcenter" ng-controller="productCtrl">
+	<h3>
+		Fetured Albums
+	</h3>
+	<div class="productsrem" id="productsrem" ng-repeat="song in fsong">
+		<div class="primagesc">
+			<img ng-src="images/songsimages/{{song.image}}">
+		</div>
+		<div class="prtitle">
+			<h4>
+				{{song.title}}
+			</h4>
+		</div>
+		<div class="prdescription">
+			<p>
+				{{song.description}}
+			</p>
+		</div>
+		<div class="pramount">
+			<p>{{ song.amount | currency }}</p>
+		</div>
+		<div class="addtocartpr">
+			<button class="addtocartbtn" id="addtocartbtn" ng-click="addtocart()">
+				Add to cart
+			</button>
+		</div>
+	</div>
+</div>

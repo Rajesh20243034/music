@@ -1,0 +1,56 @@
+<div class="container" id="homecontainer">
+	
+	<div class="container slider">
+	    <img ng-repeat="slide in slides" class="slide slide-animation nonDraggableImage"
+	     ng-swipe-right="nextSlide()" ng-swipe-left="prevSlide()"
+	     ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+
+	    <a class="arrow prev" ng-click="nextSlide()"></a>
+	    <a class="arrow next" ng-click="prevSlide()"></a>
+	    <nav class="nav">
+	        <div class="wrapper">
+	            <ul class="dots">
+	                <li class="dot" ng-repeat="slide in slides">
+	                    <a ng-class="{'active':isCurrentSlideIndex($index)}"
+	                       ng-click="setCurrentSlideIndex($index);">{{slide.description}}</a></li>
+	            </ul>
+	        </div>
+	    </nav>
+	</div>
+	<div class="remlayout" ng-controller="productCtrl">
+		<div class="product" id="product">
+			<div class="spproduct csssproduct" ng-repeat="song in songs">
+				<div class="sprimg">
+					<img ng-src="images/songsimages/{{song.image}}">
+				</div>
+				<div class="stitle">
+					<h4>{{song.title}}</h4>
+				</div>
+				<div class="sdescription">
+					<p>{{song.description}}</p>
+				</div>
+				<div class="samount">
+					<p>{{song.amount | currency}}</p>
+				</div>
+				<div class="saddtocart">
+					<button id="addtocartbtn" class="addtocartbtn" ng-click="addtocart()">Add To Cart </button>
+				</div>
+			</div>
+		</div>
+		<div class="product2nd" id="product2nd">
+			<div class="prleft">
+				<leftdiv></leftdiv>
+			</div>
+			<div class="prcenter">
+				<centerdiv>
+				</centerdiv>
+			</div>
+			<div class="prright">
+				<rightdiv></rightdiv>
+			</div>
+		</div>
+		<div class="pull-right seeall">
+			<a href="#">See All </a>
+		</div>
+	</div>
+</div>
